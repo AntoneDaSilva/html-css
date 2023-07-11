@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        
+        a:visited {
+            color: rgb(238, 105, 16);
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            color: yellow;
+            background-color: orange;
+        }
+
+        .link::before {
+            content: ' >';
+        }
+
+        .link::after {
+            content: ' <' ;
+        }
+
+        .link:active{
+            color: cyan;
+        }
+
+        div#sum > p#Apareceu{
+            display: none;
+        }
+
+        div#sum:hover > p#Apareceu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <h2>Links</h2>
+    <div>
+        <p>se quiser tá uma olhada no curso que eu utilizei para aprender HTML e CSS,<a href="https://github.com/gustavoguanabara" class="link" target="_blank"> pode olhar o github do Gustavo Guanabara.</a></p>
+        <p>Ele também possue um canal no <a href="https://www.youtube.com/@CursoemVideo" class="link" target="_blank"> youtube</a></p>
+    </div>
+    <div id="sum">
+        <p id="passe">Mais uma coisa... preste atenção no texto abaixo. Que texto? passe o mouse aqui</p>
+        <p id="Apareceu">Estou aqui</p>
+    </div>
+</body>
+</html>

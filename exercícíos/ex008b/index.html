@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatações</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        mark{
+            mark: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>treino de certas</h1>
+    <p>para podermos fazer a marcação de um texto, tal qual aquela canetinha, usamos a tag &lt;mark&gt; <mark>e deverá ficar dessa formar</mark></p>
+    <h2>DEL e INS</h2>
+    <p><q>a tag <abbr title="delete">del</abbr> significa</q> que o <del>texto esta lá, porém, pode ser desconsiderado</del></p>
+    <p>já a ins é o oposto, ela diz que o <ins>texto esta alí e deve ser lido</ins></p>
+    <h2>CODE e PRE</h2>
+    <p>a tag code indica para o navegar que se trata de código de computador</p>
+            <code>
+                num=int(input('digite um número'))
+                if num %2 == 0
+                    print(f'o número {num} é impar)
+                else:
+                print("fim do programa")
+            </code>
+        <p>como pode ver, no nosso navegador, fica uma completa bagunça. Para resolvermos isso, precisamos usar a tag <strong>pre</strong>
+        </p>
+        <pre>
+            <code>
+                num=int(input('digite um número'))
+                if num %2 == 0
+                    print(f'o número {num} é impar)
+                else:
+                print("fim do programa")
+            </code>
+            <p><bdo dir="rtl">esse texto inteiro deverá ficar invertido</bdo></p>
+        </pre>
+</body>
+</html>
